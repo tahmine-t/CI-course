@@ -8,14 +8,6 @@ This project involves implementing feature selection techniques for an image cla
 
 ## Overview
 
-<p align="center">
-  <img src="images/imge3.png" alt="how_to_select" width="400">
-</p>
-
-<p align="center">
-  <img src="images/imge1.png" alt="network" width="400">
-</p>
-
 The project consists of two main parts:
 1. **SVM Classification**: Evaluating and fine-tuning Support Vector Machines with different kernels and hyperparameters to improve classification accuracy.
 2. **Neural Network and Feature Selection**: Using an MLP for feature selection and refining the model by reducing the input feature space based on the most important features.
@@ -46,7 +38,7 @@ The classification performance is evaluated using the following metrics:
 3. **Recall**: Measures how many of the actual positive values were correctly predicted.
 4. **F1 Score**: The harmonic mean of precision and recall, balancing both metrics to assess overall classification performance.
 
-### SVM Classification
+## SVM Classification
 
 Three different SVM kernel functions were evaluated:
 1. **Linear Kernel**: Suitable when classes are linearly separable.
@@ -76,7 +68,7 @@ The results indicate that **C = 10** provides the best trade-off between model f
 - **L1 Regularization**: 0.001
 - **Test Accuracy**: 0.88
 
-### Feature Selection Process
+## Feature Selection Process
 
 The feature selection process involved training the model on all features and selecting the most important ones based on the absolute sum of weights in the first layer of the MLP. The process was repeated iteratively to find the top 150 features.
 
@@ -91,7 +83,7 @@ The final model achieved the best score of **0.70** with **110 features**.
 2. **MLP**: Use the MLP to train with different regularization parameters and perform feature selection.
 3. **Feature Selection**: Perform feature selection to determine the most important features and improve the classifier.
 
-### 4. Evaluation
+### Evaluation
 
 Evaluate the classifier's performance using the confusion matrix, precision, recall, F1 score, and accuracy metrics.
 
